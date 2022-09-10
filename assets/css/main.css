@@ -1,0 +1,684 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;800&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,500;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mulish', sans-serif;
+}
+.login-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #363740;
+    padding: 0 10px;
+}
+.login-container .login {
+    width: 380px;
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    padding: 45px 30px;
+}
+.login-container .login h3 {
+    font-weight: 700;
+    text-align: center;
+}
+.login-container .login p {
+    color: #9FA2B4;
+    font-weight: 400;
+    text-align: center;
+}
+.login-container .login form input {
+    width: 100%;
+    height: 42px;
+    border-radius: 8px;
+    border: 1px solid #9FA2B4;
+    padding: 0 10px;
+    margin-top: 5px;
+    outline: none;
+    /* color: #9FA2B4; */
+}
+.login-container .login form input:focus {
+    border: 1px solid #3751FF !important;
+}
+.login-container .login form label {
+    color: #9FA2B4;
+}
+.login-container .login form label:first-child {
+    margin-top: 20px;
+}
+.login-container .login form label.pass-label {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.login-container .login form label.pass-label a {
+    color: #9FA2B4;
+    text-decoration: none;
+    font-size: 14px;
+}
+.login-container .login form .login-pass {
+    position: relative;
+}
+.login-container .login form .fa-eye {
+    position: absolute;
+    top: 42px;
+    right: 12px;
+    color: #9FA2B4;
+    display: none;
+    cursor: pointer;
+}
+.login-container .login form .fa-eye-slash {
+    position: absolute;
+    top: 42px;
+    right: 12px;
+    color: #9FA2B4;
+    cursor: pointer;
+}
+.login-container .login form .login-btn {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.login-container .login form .login-btn button {
+    width: 100%;
+    height: 42px;
+    background: #3751FF;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+}
+.login-container .login .login-footer {
+    margin-top: 30px;
+}
+.login-container .login .login-footer a {
+    text-decoration: none;
+    color: #3751FF;
+    font-weight: 600;
+}
+
+
+.s-blackboard nav {
+    width: 80%;
+    position: relative;
+    left: 20%;
+    display: flex;
+    justify-content: space-between;
+    background: #F7F8FC;
+}
+.s-blackboard nav .pageName {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.s-blackboard nav .pageName .sideBars {
+    z-index: 1;
+    margin-left: 10px;
+    display: none;
+}
+.s-blackboard nav .pageName b {
+    font-size: 25px;
+}
+.s-blackboard nav .studentNav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 10px;
+}
+.s-blackboard nav .studentNav .statusIcon {
+    margin-right: 20px;
+}
+.s-blackboard nav .studentNav .statusIcon i {
+    color: #9FA2B4;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.s-blackboard nav .studentNav .statusIcon i:first-child {
+    margin-right: 15px;
+}
+.s-blackboard nav .studentNav .status {
+    margin-left : 20px;
+}
+.s-blackboard nav .studentNav .status img {
+    width: 50px;
+}
+.s-blackboard nav .studentNav .status span {
+    margin-right: 12px;
+    font-size: 18px;
+}
+.s-blackboard nav .side-bar-menu {
+    margin: 8px;
+    font-size: 20px;
+}
+.s-blackboard .tab {
+    background: #363740;
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.7s;
+}
+.s-blackboard .tab.active {
+    transform: translateY(0%);
+    z-index: 999;
+    transition: 0.7s;
+}
+.s-blackboard .tab .s-blackboard-logo {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 50px 0;
+}
+.s-blackboard .tab .s-blackboard-logo .logo {
+    padding: 9px 10px;
+    border-radius: 100%;
+    background: #3751FF;
+    margin-right: 15px;
+    color: #fff;
+    margin-left: 30px;
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.s-blackboard .tab .s-blackboard-logo span{
+    color: #A4A6B3;
+    font-size: 23px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.s-blackboard .tab button {
+    display: block;
+    background-color: inherit;
+    color: #A4A6B3;
+    padding: 6% 16px;
+    width: 85%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.4s;
+    font-size: 17px;
+    /* text-align: center; */
+}
+.s-blackboard .tab button i {
+    margin-left: 30px;
+    margin-right: 15px;
+} 
+.s-blackboard .tab button:hover {
+    width: 100%;
+    background: #3E4049;
+    color: #DDE2FF;
+    border-left: 3px solid #DDE2FF;
+}
+  
+.s-blackboard .tab button.active {
+    width: 100%;
+    background: #3E4049;
+    color: #DDE2FF;
+    border-left: 3px solid #DDE2FF;
+}
+.s-blackboard .tab hr {
+    background: #656670;
+}
+.s-blackboard .tabcontent {
+    position: relative;
+    left: 20%;
+    padding: 10px 22px;
+    padding-bottom: 200px;
+    width: 80%;
+    border-left: none;
+    display: none;
+    background: #F7F8FC;
+    min-height: 93vh;
+}
+.s-blackboard #default .profile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.s-blackboard #default .profile img {
+    width: 170px;
+    border-radius: 100%;
+}
+.s-blackboard #default .profile h2 {
+    font-weight: 600;
+}
+.s-blackboard #default .profile p {
+    font-size: 20px;
+    font-weight: 600;
+}
+.s-blackboard #default .student-info {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 2rem;
+}
+.s-blackboard #default .student-info .box {
+    width: 100%;
+    height: 200px;
+}
+.s-blackboard #default .student-info table {
+    width: 100%;
+}
+.s-blackboard #default .student-info .box h5 {
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.s-blackboard #default .student-info table tr {
+    border: 1px solid #CECECE;
+}
+.s-blackboard #default .student-info table tr td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+}
+.s-blackboard #default .student-info table tr td span {
+    color: #585858;
+}
+.s-blackboard #default .student-info table tr td span a{
+    display: block;
+    margin-bottom: 10px;
+}
+.s-blackboard #attendance .course-time {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 2rem;
+}
+.s-blackboard #attendance .course-time .box {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #DFE0EB;
+    border-radius: 8px;
+    margin-top: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: .5s;
+    cursor: pointer;
+}
+.s-blackboard #attendance .course-time .box:hover {
+    border: 1px solid #3751FF;
+}
+.s-blackboard #attendance .course-time .box:hover >  h6 {
+    color: #3751FF;
+}
+.s-blackboard #attendance .course-time .box:hover >  h1 {
+    color: #3751FF;
+}
+.s-blackboard #attendance .course-time .box h6 {
+    color: #9FA2B4;
+    font-size: 19px;
+    transition: .5s;
+}
+.s-blackboard #attendance .course-time .box h1 {
+    font-size: 40px;
+    font-weight: 700;
+    transition: .5s;
+}
+.s-blackboard #attendance .attendance-garphic {
+    width: 100%;
+    /* height: 78vh; */
+    background: #fff;
+    border: 1px solid #DFE0EB;
+    border-radius: 8px;
+    margin-top: 30px;
+    display: flex;
+}
+.s-blackboard #attendance .attendance-garphic .graph {
+    width: 70%;
+    padding: 25px 25px;
+}
+.s-blackboard #attendance .attendance-garphic .graph-info {
+    width: 30%;
+}
+.s-blackboard #attendance .attendance-garphic .graph-info .box {
+    width: 100%;
+    height: 120px;
+    border: 1px solid #DFE0EB;
+    border-top: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin: 10px; */
+    /* border-radius: 8px; */
+}
+.s-blackboard #attendance .attendance-garphic .graph-info .box h6 {
+    color: #9FA2B4;
+    font-size: 19px;
+    transition: .5s;
+}
+.s-blackboard #attendance .attendance-garphic .graph-info .box h1 {
+    font-size: 30px;
+    font-weight: 700;
+    transition: .5s;
+}
+.s-blackboard #attendance .extra-data {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 2rem;
+    margin-top: 30px;
+}
+.s-blackboard #attendance .extra-data .box {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #DFE0EB;
+    border-radius: 8px;
+}
+.s-blackboard #attendance .extra-data .box .card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+.s-blackboard #attendance .extra-data .box .card-title a {
+    text-decoration: none;
+    color: #3751FF;
+}
+.s-blackboard #attendance .extra-data .box .card-title .title h3 {
+    font-weight: 700;
+}
+.s-blackboard #attendance .extra-data .box .card-title .title p span {
+    color: #9FA2B4;
+}
+.s-blackboard #attendance .card-extra b {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #DFE0EB;
+    padding: 20px 20px;
+}
+.s-blackboard #attendance .card-extra b span:nth-child(2) {
+    color: #9FA2B4;
+}
+.s-blackboard #attendance .card-extra b span i {
+    font-size: 23px;
+    background: #F0F1F7;
+    color: #9FA2B4;
+}
+.s-blackboard #attendance .card-extra b span.task {
+    color: #C5C7CD;
+}
+.s-blackboard #attendance .card-extra b span input {
+    margin-right: 10px;
+}
+.s-blackboard #attendance .card-extra b span.badgeY {
+    background: #FEC400;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+}
+.s-blackboard #attendance .card-extra b span.badgeG {
+    background: #29CC97;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+}
+.s-blackboard #attendance .card-extra b span.badgeD {
+    background: #F0F1F7;
+    color: #9FA2B4;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+}
+.s-blackboard #portfolio .portfolio-btn {
+    display: flex;
+    justify-content: end;
+}
+.s-blackboard #portfolio .portfolio-btn button {
+    margin: 5px;
+    border: none;
+    padding: 4px 20px;
+    border-radius: 8px;
+    background: #363740;
+    color: #fff;
+}
+.s-blackboard #portfolio .portfolio-btn button:first-child {
+    background: #3751FF;
+}
+
+.s-blackboard #portfolio .tab1 {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.s-blackboard #portfolio .tab1 button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    /* padding: 14px 20px; */
+    transition: 0.3s;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 600;
+    font-size: 17px;
+}
+.s-blackboard #portfolio .tab1 button:hover {
+    color: #3751FF;
+}
+  
+.s-blackboard #portfolio .tab1 button.active {
+    color: #3751FF;
+    font-weight: 700;
+}
+.s-blackboard #portfolio .tabcontent1 {
+    display: none;
+}
+.s-blackboard #portfolio .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.s-blackboard #portfolio .cards .card {
+    width: 430px;
+    height: 300px;
+    margin: 10px;
+}
+.s-blackboard #portfolio .cards .card img {
+    width: 100%;
+    height: 100%;
+}
+.s-blackboard #news .tab2 {
+    overflow: hidden;
+    margin-top: 20px;
+    display: block;
+}
+.s-blackboard #news .tab2 button {
+    background-color: #fff;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 3px 15px;
+    transition: 0.3s;
+    font-size: 17px;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+.s-blackboard #news .tab2 button:hover {
+    background-color: #2F9FF8;
+    color: #fff;
+}
+.s-blackboard #news .tab2 button.active {
+    background-color: #2F9FF8;
+    color: #fff;
+}
+.s-blackboard #news .tabcontent2 {
+    display: none;
+    /* padding: 6px 12px; */
+}
+.s-blackboard #news .news {
+    width: 100%;
+}
+.s-blackboard #news .news .box1 {
+    width: 100%;
+    margin-top: 20px;
+}
+.s-blackboard #news .news .box1 .lastNews {
+    width: 98%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.04);
+}
+.s-blackboard #news .news .box1 .lastNews .text {
+    width: 70%;
+}
+.s-blackboard #news .news .box1 .lastNews .text h4 {
+    font-weight: 700;
+    color: #072D4B;
+    /* font-size: 23px; */
+}
+.s-blackboard #news .news .box1 .lastNews .text p {
+    color: #072D4B;
+}
+.s-blackboard #news .news .box1 .lastNews .text .newsTime {
+    display: flex;
+    justify-content: space-between;
+}
+.s-blackboard #news .news .box1 .lastNews .text .newsTime p {
+    color: #3751FF;
+}
+.s-blackboard #news .news .box1 .lastNews .img {
+    width: 25%;
+}
+.s-blackboard #news .news .box1 .lastNews .img img {
+    width: 100%;
+    border-radius: 8px;
+}
+.s-blackboard #news .news .box1 .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.s-blackboard #news .news .box1 .cardNews {
+    width: 48%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.04);
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.s-blackboard #news .news .box1 .cardNews .text {
+    width: 60%;
+}
+.s-blackboard #news .news .box1 .cardNews .text h4 {
+    font-weight: 700;
+    color: #072D4B;
+    /* font-size: 23px; */
+}
+.s-blackboard #news .news .box1 .cardNews .text p {
+    color: #072D4B;
+}
+.s-blackboard #news .news .box1 .cardNews .text .newsTime {
+    display: flex;
+    justify-content: space-between;
+}
+.s-blackboard #news .news .box1 .cardNews .text .newsTime p {
+    color: #3751FF;
+}
+.s-blackboard #news .news .box1 .cardNews .img {
+    width: 35%;
+}
+.s-blackboard #news .news .box1 .cardNews .img img {
+    width: 100%;
+    border-radius: 8px;
+}
+.s-blackboard #course .my-course {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.s-blackboard #course .my-course .card {
+    width: 550px;
+    padding: 20px 20px;
+    border-radius: 20px;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.s-blackboard #course .my-course .graph .progress-bar {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    outline: 1px solid rgba(209, 197, 252, .5);
+    outline-offset: -1px;
+}
+.s-blackboard #course .my-course .graph .progress-bar::after, 
+.s-blackboard #course .my-course .graph .progress-bar span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.s-blackboard #course .my-course .graph .progress-bar::after {
+    content: '';
+    width: 110px;
+    height: 110px;
+    border-radius: inherit;
+    outline: inherit;
+}
+.s-blackboard #course .my-course .graph .progress-bar .circle {
+    stroke-dasharray: 418;
+    stroke-dashoffset: 418;
+    transform: rotate(-90deg);
+    animation: bar-fill 8s;
+}
+@keyframes bar-fill {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+.s-blackboard .tab .dropdown-container {
+    display: none;
+    background-color: #26262623;
+    padding-left: 10px;
+    width: 100%;
+}
+.s-blackboard .tab .dropdown-container button i {
+    margin-left: 50px;
+}
+.s-blackboard .tab .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}

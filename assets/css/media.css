@@ -1,0 +1,173 @@
+@media (max-width: 1500px) {
+    .s-blackboard .tab .s-blackboard-logo {
+        padding: 25px 0;
+    }
+    .s-blackboard .tab .s-blackboard-logo .logo {
+        margin-left: 15px;
+    }
+    .s-blackboard .tab button {
+        width: 100%;
+    }
+    .s-blackboard .tab button i {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 1176px) {
+    .s-blackboard .tab {
+        width: 250px;
+        transform: translateX(-100%);
+    }
+    .s-blackboard .tabcontent {
+        width: 100%;
+        left: 0;
+    }
+    .s-blackboard nav {
+        width: 100%;
+        left: 0;
+    }
+    .s-blackboard nav .pageName .sideBars {
+        display: block;
+    }
+    .s-blackboard #default .profile img {
+        width: 125px;
+    }
+    .s-blackboard #attendance .attendance-garphic {
+        display: block;
+        height: auto;
+    }
+    .s-blackboard #attendance .attendance-garphic .graph {
+        width: 100%;
+    }
+    .s-blackboard #attendance .attendance-garphic .graph-info {
+        width: 100%;
+    }
+    .s-blackboard #attendance .attendance-garphic .graph-info .box {
+        margin: 0;
+        /* margin-top: 15px; */
+    }
+}
+
+@media (max-width: 1092px) {
+    .s-blackboard #news #allN .news .box1 .cardNews {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .s-blackboard #attendance .extra-data {
+        grid-template-columns: 100%;
+    }
+    .s-blackboard #news #allN .news .box1 .lastNews {
+        display: block;
+    }
+    .s-blackboard #news #allN .news .box1 .lastNews .text {
+        width: 100%;
+    }
+    .s-blackboard #news #allN .news .box1 .lastNews .img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 960px) {
+    .s-blackboard #portfolio .cards .card {
+        height: auto;
+    }
+}
+
+@media (max-width: 930px) {
+    .s-blackboard #default .student-info {
+        grid-template-columns: 100%;
+    }
+    .s-blackboard #default .student-info .box:nth-child(2) {
+        margin-top: 170px;
+    }
+    .s-blackboard #attendance .course-time {
+        grid-template-columns: repeat(2, 2fr);
+    }
+}
+
+@media (max-width: 670px) {
+    .s-blackboard #portfolio .tab1 {
+        flex-direction: column;
+    }
+    .s-blackboard #news #allN .news .box1 .cardNews {
+        display: block;
+        margin-right: 0;
+    }
+    .s-blackboard #news #allN .news .box1 .cardNews .text {
+        width: 100%;
+    }
+    .s-blackboard #news #allN .news .box1 .cardNews .img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 530px) {
+    .s-blackboard #default .student-info table tr td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .s-blackboard #news .tab2 button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 470px) {
+    .s-blackboard .tab .s-blackboard-logo {
+        padding: 30px 0;
+    }
+    .s-blackboard nav .studentNav u, .statusIcon, .pageName b {
+        display: none;
+    }
+    .s-blackboard .tab button {
+        padding: 16px 16px;
+    }
+    .s-blackboard #attendance .course-time {
+        grid-template-columns: 100%;
+    }
+    .s-blackboard #attendance .course-time .box {
+        margin-top: 0px;
+    }
+    .s-blackboard #attendance .course-time .box:first-child {
+        margin-top: 20px;
+    }
+    .s-blackboard #attendance .attendance-garphic .graph {
+        padding: 2px 2px;
+    }
+    .s-blackboard #attendance .extra-data .box .card-title {
+        display: block;
+    }
+}
+
+@media (max-width: 415px) {
+    .s-blackboard .tabcontent {
+        padding-bottom: 250px;
+    }
+    .s-blackboard #portfolio .portfolio-btn {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 370px) {
+    .login-container .login {
+        padding: 45px 20px;
+    }
+    .s-blackboard #default .profile img {
+        width: 110px;
+    }
+    .s-blackboard #default .profile h2 {
+        font-size: 20px;
+    }
+    .s-blackboard #default .profile p {
+        font-size: 15px;
+    }
+}
+
